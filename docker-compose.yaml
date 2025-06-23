@@ -10,7 +10,7 @@ services:
       - DOCKER_VERNEMQ_DISCOVERY_NODE=vernemqgw.local
       - DOCKER_VERNEMQ_LISTENER__TCP__ALLOWED_PROTOCOL_VERSIONS=3,4,5,131,132 # listener.tcp.allowed_protocol_versions = 3,4,5,3 bridge, 3.1.1 bridge
       - DOCKER_VERNEMQ_PLUGINS__VMQ_BRIDGE=on # The VerneMQ bridge plugin. plugins.vmq_bridge = off
-      - DOCKER_VERNEMQ_VMQ_BRIDGE__TCP__BR0=192.168.1.103:1883 # vmq_bridge.tcp.br0 = 127.0.0.1:1889
+      - DOCKER_VERNEMQ_VMQ_BRIDGE__TCP__BR0=${MQTT_BRIDGE_TO} # vmq_bridge.tcp.br0 = 127.0.0.1:1889
       - DOCKER_VERNEMQ_VMQ_BRIDGE__TCP__BR0__TOPIC__1=iot-frames-model/* both 1 # vmq_bridge.tcp.br0.topic.1 = topic pattern topic [[[ out | in | both ] qos-level] local-prefix remote-prefix]
       - DOCKER_VERNEMQ_LOG__CONSOLE__LEVEL=info #log.console.level = debug 
     volumes:
