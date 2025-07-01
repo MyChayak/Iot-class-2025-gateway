@@ -55,3 +55,38 @@ MQTT_BRIDGE_TO=192.168.1.100:1883
 ```
 
 ---
+
+## 💾 **Starting Container**
+```bash
+# change to directory gateway
+$ cd ~/iot-class-2025-gateway
+
+# build and start container
+$ docker compose up --build 
+
+```
+|Option	|Default	|Description|
+|--|--|--|
+|--build		| |Build images before starting containers|
+
+---
+
+
+## 💾 **Stop and remove containers, networks**
+```bash
+# change to directory gateway
+$ cd ~/iot-class-2025-gateway
+
+# build and start container
+$ docker compose down --volumes --remove-orphans --rmi
+
+```
+
+|Option	|Default	|Description|
+|--|--|--|
+|--remove-orphans		| |Remove containers for services not |defined in the Compose file|
+|--rmi		| |Remove images used by services. "local" remove |only images that don't have a custom tag ("local"||"all")|
+|-t, --timeout		| |Specify a shutdown timeout in seconds|
+|-v, --volumes		| |Remove named volumes declared in the |"volumes" section of the Compose file and anonymous |volumes attached to containers|
+
+---
