@@ -59,7 +59,7 @@ MQTT_BRIDGE_TO=192.168.1.100:1883
 ## 💾 **Starting Container**
 ```bash
 # change to directory gateway
-$ cd ~/iot-class-2025-gateway
+$ cd ~/Iot-class-2025-gateway
 
 # build and start container
 $ docker compose up --build 
@@ -75,7 +75,7 @@ $ docker compose up --build
 ## 💾 **Stop and remove containers, networks**
 ```bash
 # change to directory gateway
-$ cd ~/iot-class-2025-gateway
+$ cd ~/Iot-class-2025-gateway
 
 # build and start container
 $ docker compose down --volumes --remove-orphans --rmi
