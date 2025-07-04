@@ -5,8 +5,9 @@ env/
 
 *.bkp
 
-mosquitto/log
-mosquitto/data
+/log
+/data
+/config/mosquitto.conf
 mqtt-vol/*
 
 state
