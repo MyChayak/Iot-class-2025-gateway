@@ -7,7 +7,7 @@ This project sets up a **Mosquitto MQTT broker** inside Docker, using a dynamic 
 ## 📁 Folder Structure
 
 ```plaintext
-.
+Iot-class-2025-gateway/
 ├── Dockerfile                  # Custom image to install envsubst
 ├── docker-compose.yml          # Docker Compose service
 ├── .env                        # Environment variable file
@@ -35,7 +35,7 @@ This project sets up a **Mosquitto MQTT broker** inside Docker, using a dynamic 
 Create a `.env` file in the root folder:
 
 ```env
-MQTT_BRIDGE_TO=192.168.1.105:1883
+MQTT_BRIDGE_TO=192.168.1.104:1883
 ````
 
 ---
