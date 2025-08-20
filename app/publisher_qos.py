@@ -1,7 +1,7 @@
 import paho.mqtt.client as mqtt
 from datetime import datetime
 
-BROKER = "172.16.2.117"
+BROKER = "172.30.15.133"
 PORT = 1883
 STUDENT_ID = 68123456789
 TOPIC = f"test/qos/{STUDENT_ID}/temperature"
