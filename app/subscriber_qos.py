@@ -1,9 +1,10 @@
 import paho.mqtt.client as mqtt
 from datetime import datetime
 
-BROKER = "localhost"
+BROKER = "172.16.2.117"
 PORT = 1883
-TOPIC = "test/qos"
+STUDENT_ID = 68123456789
+TOPIC = f"test/qos/{STUDENT_ID}"
 
 def timestamp():
     return datetime.now().strftime("%H:%M:%S")
