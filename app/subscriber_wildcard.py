@@ -3,12 +3,12 @@ from datetime import datetime
 
 BROKER = "172.30.15.133"
 PORT = 1883
-STUDENT_ID = "68123456789"  # Example student ID (not used when wildcard is applied)
+STUDENT_ID = "6510301013"  # Example student ID (not used when wildcard is applied)
 
 # 🔹 Subscribe to temperature data from ALL student IDs
 # Using '+' wildcard to match exactly one level of the topic hierarchy
 TOPICS = [
-    (f"", 2),  # Subscribe with QoS=2
+    (f"test/qos/6510301013/temperature", 2),  # Subscribe with QoS=2
 ]
 
 def timestamp():

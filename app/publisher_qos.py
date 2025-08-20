@@ -3,7 +3,7 @@ from datetime import datetime
 
 BROKER = "172.30.15.133"
 PORT = 1883
-STUDENT_ID = 68123456789
+STUDENT_ID = 6510301013
 TOPIC = f"test/qos/{STUDENT_ID}/temperature"
 
 def timestamp():
