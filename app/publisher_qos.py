@@ -4,7 +4,7 @@ from datetime import datetime
 BROKER = "172.16.2.117"
 PORT = 1883
 STUDENT_ID = 68123456789
-TOPIC = f"test/qos/{STUDENT_ID}"
+TOPIC = f"test/qos/{STUDENT_ID}/temperature"
 
 def timestamp():
     return datetime.now().strftime("%H:%M:%S")
